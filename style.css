@@ -1,0 +1,40 @@
+.headhesive ul.menu{
+    display: flex;
+        width: 63%;
+    margin: auto;
+}
+.headhesive ul.menu li a{
+    color: white;
+}
+.menu li{
+        list-style: none;
+        padding: 10px;
+  
+    }
+.menu li:hover{
+        background-color: #a5871a;
+    }
+.menu li a{
+        color: #000;
+        text-decoration: none;
+    font-weight: 700;
+        padding: 7px;
+        padding-top: 11px;
+    }
+.headhesive{
+        background-color: #181a1bcf;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transform: translateY(-100%);
+    transition : 1s;
+    border-bottom: 1px solid #fff;
+        
+}
+.headhesive--stick{
+ transform: translateY(0);
+}
+.headhesive li{
+    margin: auto;
+}
+

@@ -5,36 +5,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <link rel="stylesheet" href="icon/css/font-awesome.min.css">
      <link rel="stylesheet/less" type="text/css" href="/styles.less"/>
-     <link rel="stylesheet" href="styles.less" media="all"/>
-      <script src="jquery-3.2.1.min.js"></script>
+   <script src="jquery-3.2.1.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
      
      
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
+   
+    <div class="header-block">
        <div class="header">
            <img class="img" src="/img/bacground-heder.jpg" alt="bckg">
            <div class="blackout"></div>
            <div class="logo-hho">
                <img src="/img/logo-hho.png" alt="">
            </div>
+           <div id="anchor"></div>
            <div class="hedaer_menu">
-               <ul class="menu">
-                   <li><a href="#" data-target="anchor">ГЛАВНАЯ</a></li>
-                   <li><a href="#text-content" data-target="anchor">ТЕХНОЛОГИЯ</a></li>
-                   <li><a href="#hydrogen_cleaning_engine" data-target="anchor">ВОДОРОДНАЯ ОЧИСТКА ДВС</a></li>
-                   <li><a href="#price-list" data-target="anchor">ПРАЙС-ЛИС</a></li>
-                   <li><a href="#bottom-block-contacts" data-target="anchor">КОНТАКТЫ</a></li>
-                   
+             
+               <ul class="menu"  id="myTopnav">
+                  <li class="icon"><a href="Javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a></li>
+                   <li><a href="#anchor" data-target="anchor">ГЛАВНАЯ</a></li>
+                   <li><a href="#text-content" data-target="anchor" onclick="myFunction()">ТЕХНОЛОГИЯ</a></li>
+                   <li><a href="#hydrogen_cleaning_engine" data-target="anchor" onclick="myFunction()" >ВОДОРОДНАЯ ОЧИСТКА ДВС</a></li>
+                   <li><a href="#price-list" data-target="anchor" onclick="myFunction()">ПРАЙС-ЛИС</a></li>
+                   <li><a href="#background-bottom-block" data-target="anchor" onclick="myFunction()">КОНТАКТЫ</a></li>
+                <ul class="mobail-menu_icon">
+                      <li class="positionIcon"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li class="positionIcon"><a href="#"><i class="fab fa-instagram"></i></a> </li>
+                      <li class="positionIcon"><a href="#"><i class="fab fa-facebook-square"></i></a> </li>
+                      <li class="positionIcon"><a href="#"><i class="fas fa-phone-square"></i></a></li>
+                  </ul>
                </ul>
+              
            </div>
            <div class="main_text">
-               <h1>Мы возрождаем моторы!</h1><h1>Промывка двигателя водородом</h1><h1>Очистка сажевых фильтров и катализаторов</h1>
+               <h1 class="header_textT-size-one">Мы возрождаем моторы!</h1><h1 class="header_textT-size-two">Промывка двигателя водородом</h1>
            </div>
            <div class="button_sign-up">
                <a href="#">ЗАПИСАТСЯ</a>
@@ -68,13 +77,15 @@
        </div>
         <div id="hydrogen_cleaning_engine">
             <h1>ВОДОРОДНАЯ ОЧИТКА ДВС</h1>
-            <div class="video_cleaning_technology"></div>
+            <div class="video_cleaning_technology">
             <iframe width="200px" height="200" float="left" margin="30px" src="https://www.youtube.com/embed/qZZGTH2AeAM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             <iframe width="200px" height="200" float="left" margin="30px" src="https://www.youtube.com/embed/qZZGTH2AeAM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             <iframe width="200px" height="200" float="left" margin="30px" src="https://www.youtube.com/embed/qZZGTH2AeAM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             </div>
+            </div>
             
         </div>
+       
         <div class="recommendation_cleaning_engine">
                 <div class="recommendation-filling-content">
                     <h1>ПОЧЕМУ МЫ РЕКОМЕНДУЕМ ЧИСТИТЬ ДВИГАТЕЛЬ </h1>
@@ -93,36 +104,57 @@
                <h1>ПРЕИМУЩЕСТВА ОЧИСТКИ ДВИГАТЕЛЯ</h1>
                <ul class="check-mark">
                    <li><img src="img/check-mark.png" alt=""><p>Восстанавливает мощность <br><span class="align">до 10%</span></p></li>
-                    <li><img src="img/check-mark.png" align="middle" alt=""><p>Снижает шум двигателя</li>
+                   <li><img src="img/check-mark.png" align="middle" alt=""><p>Снижает шум двигателя</p></li>
                     <li><img src="img/check-mark.png" alt=""><p>Сокращает расходы на обслуживание</p></li>
                     <li><img src="img/check-mark.png" alt=""><p>Восстанавливает производительность</p></li>
                </ul>
                 </div>
             </div>
-            <div class="container">
+
+         
             <div id="price-list">
                 <h1>ПРАЙС-ЛИСТ</h1>
-                <div class="block-price-list top01"><img src="img/engen-for-blick.png" alt=""><p>Чистка двигателя водородом<br><span class="font-weight">Объемом: 1000-1500см</span><br><span>Объем водорода : 800-1000 (L/H)</span><br><span>Время чистки : 20 (минут)</span><br><span class="centr">Стоимость : 800 грн</span></p><div class="button">менеджер</div></div>
-                <div class="block-price-list top02"><img src="img/engen-for-blick.png" alt=""><p>Чистка двигателя водородом<br><span class="font-weight">Объемом: 1000-1500см</span><br><span>Объем водорода : 800-1000 (L/H)</span><br><span>Время чистки : 20 (минут)</span><br><span class="centr">Стоимость : 800 грн</span></p><div class="button">менеджер</div></div>
-                <div class="block-price-list top03"><img src="img/engen-for-blick.png" alt=""><p>Чистка двигателя водородом<br><span class="font-weight">Объемом: 1000-1500см</span><br><span>Объем водорода : 800-1000 (L/H)</span><br><span>Время чистки : 20 (минут)</span><br><span class="centr">Стоимость : 800 грн</span></p><div class="button">менеджер</div></div>
-                <div class="block-price-list top04"><img src="img/engen-two-for-block-.png" alt=""><p>Чистка двигателя водородом<br><span class="font-weight">Объемом: 1000-1500см</span><br><span>Объем водорода : 800-1000 (L/H)</span><br><span>Время чистки : 20 (минут)</span><br><span class="centr">Стоимость : 800 грн</span></p><div class="button">менеджер</div></div>
-                <div class="block-price-list top05"><img src="img/engen-two-for-block-.png" alt=""><p>Чистка двигателя водородом<br><span class="font-weight">Объемом: 1000-1500см</span><br><span>Объем водорода : 800-1000 (L/H)</span><br><span>Время чистки : 20 (минут)</span><br><span class="centr">Стоимость : 800 грн</span></p><div class="button">менеджер</div></div>
-                <div class="block-price-list top06"><img src="img/engen-two-for-block-.png" alt=""><p>Чистка двигателя водородом<br><span class="font-weight">Объемом: 1000-1500см</span><br><span>Объем водорода : 800-1000 (L/H)</span><br><span>Время чистки : 20 (минут)</span><br><span class="centr">Стоимость : 800 грн</span></p><div class="button">менеджер</div></div>
+                <div class="block-price-list"><img src="img/engen-for-blick.png" alt=""><span class="font-weight"> Объемом: 1000-1500см</span><span>Время чистки : 20 (минут)</span><span class="centr">Стоимость : 800 грн</span><div class="button">менеджер</div></div>
+                <div class="block-price-list"><img src="img/engen-two-for-block-.png" alt=""><span class="font-weight"> Объемом: 1000-1500см</span><span>Время чистки : 20 (минут)</span><span class="centr">Стоимость : 800 грн</span><div class="button">менеджер</div></div>
+                <div class="block-price-list centrr"><img src="img/eight-cylinder-engine.png" alt=""><span class="font-weight"> Объемом: 1000-1500см</span><span>Время чистки : 20 (минут)</span><span class="centr">Стоимость : 800 грн</span><div class="button">менеджер</div></div>
+                
+            
+            <div class="block-price-list-responsive"><img src="img/engen-for-blick.png" alt=""><p>Чистка двигателя водородом<br><span class="font-weight">Объемом: 1000-1500см</span><br><span>Объем водорода : 800-1000 (L/H)</span><br><span>Время чистки : 20 (минут)</span><br><span class="centr">Стоимость : 800 грн</span></p><div class="button">менеджер</div></div>
+                    
+                    <div class="block-price-list-responsive"><img src="img/engen-two-for-block-.png" alt=""><p>Чистка двигателя водородом<br><span class="font-weight">Объемом: 1000-1500см</span><br><span>Объем водорода : 800-1000 (L/H)</span><br><span>Время чистки : 20 (минут)</span><br><span class="centr">Стоимость : 800 грн</span></p><div class="button">менеджер</div></div>
+                    
+                    <div class="block-price-list-responsive"><img src="img/eight-cylinder-engine.png" alt=""><p>Чистка двигателя водородом<br><span class="font-weight">Объемом: 1000-1500см</span><br><span>Объем водорода : 800-1000 (L/H)</span><br><span>Время чистки : 20 (минут)</span><br><span class="centr">Стоимость : 800 грн</span></p><div class="button">менеджер</div></div>
             </div>
-            </div>
-           
-           <div class="background-bottom-block">
+             
+     
+           <div id="background-bottom-block">
             <div id="bottom-block-contacts">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7193.570354146451!2d30.633151177374884!3d50.398037863208565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1515764776590" width="250" height="150" float="left"frameborder="0" style="border:0" allowfullscreen></iframe>
     <div class="contacts"><h3><i class="fa fa-phone" aria-hidden="true"></i>Контакты</h3><br><p><span>+380(093)758-89-56</span><br><span>+380(093)758-89-56</span></p></div>
                 <div class="contacts"><h3><i class="fa fa-map-marker" aria-hidden="true"></i>Адрес</h3><br><p>Киев ул.Нагорная 47</p></div>
                 <div class="contacts"><h3><i class="fa fa-clock-o" aria-hidden="true"></i>График работы</h3><br><p class="centr">Пн-Сб: 9:00-19:00</p></div>
             </div>
-            </div>
+            
+      <div id="background-bottom-block-responsive">
+          <div class="social-network">
+             <div class="social-networking-icons">
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook-square"></i>
+              <i class="fas fa-phone-square"></i>
+              <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-information-below">
+                  <h5 class="address-below">м.Киев ул.Набирежная "№3</h5>
+                  <h5 class="pin-number-bottom">(380)-093-147-56-89 <br>(380)-093-147-56-89</h5>
+              </div>
+          </div>
+      </div>
+           </div>
             
             
             
-            <script>
+                       <script>
  $('a[data-target="anchor"]').bind('click.smoothscroll',function(){
      var target = $(this).attr('href'),
          bl_top = $(target).offset().top - 45;

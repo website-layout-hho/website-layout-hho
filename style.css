@@ -1,10 +1,12 @@
 .headhesive ul.menu{
-    display: flex;
-        width: 63%;
+        display: flex;
+    width: 71%;
     margin: auto;
+    height: 55px;
 }
 .headhesive ul.menu li a{
     color: white;
+    padding: 0px;
 }
 .menu li{
         list-style: none;
@@ -12,7 +14,7 @@
   
     }
 .menu li:hover{
-        background-color: #a5871a;
+        background-color:#287d888f;
     }
 .menu li a{
         color: #000;
@@ -34,7 +36,22 @@
 .headhesive--stick{
  transform: translateY(0);
 }
+.headhesive--stick li.icon{
+display: none;
+}
+.header .menu li.icon{
+    display: none;
+}
 .headhesive li{
     margin: auto;
+    border-radius: 4px;
 }
 
+.mobail-menu_icon li{
+    color: white;
+}
+.headhesive--stick .mobail-menu_icon{
+    top: 0px;
+}
+   
+ 

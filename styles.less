@@ -1,12 +1,13 @@
 .header{
+  height: 360px;
      & .img{
-width:  -webkit-fill-available;
-    height:400px; 
+width:  100%;
+    height:360px; 
     position: absolute;
 }
     & .blackout{
-      width:  -webkit-fill-available;
-    height: 400px;
+      width: 100%;
+    height: 360px;
     background-color: black;
     position: absolute;
     opacity: 0.7;
@@ -14,6 +15,7 @@ width:  -webkit-fill-available;
     & .logo-hho{
         position: relative;
         float: left;
+        padding: 20px;
     }
     & .hedaer_menu{
         position: relative;
@@ -25,10 +27,16 @@ width:  -webkit-fill-available;
     & .menu li{
         list-style: none;
         padding: 10px;
-    border-right: 1px solid #fff;
+    border: 1px solid #ffffff80;
+        border-radius: 20px;
+        margin: 3px;
+    }
+    & .menu li.positionIcon{
+        border: none;
+        border-radius: 4px;
     }
     & .menu li:hover{
-        background-color: #00cae459;
+        background-color:#287d888f;
     }
     & .menu li a{
         color: white;
@@ -37,15 +45,17 @@ width:  -webkit-fill-available;
         padding: 7px;
         padding-top: 11px;
     }
+    
     & .main_text{
         position: relative;
         color:white;
-            display: inline-grid;
+            display: grid;
+            display: grid;
         margin-left: 40px;
     }
     & .main_text h1{
         text-align: center;
-    margin-left: -100px;
+    margin-left: -200px;
     margin-top: 10px;
     }
     & .button_sign-up{
@@ -77,6 +87,7 @@ width:  -webkit-fill-available;
         width:55%;
         height: 400px;
         margin-top: 35px;
+        padding: 20px;
     }
     & #text-content h1 {
         text-align: center;
@@ -97,6 +108,9 @@ width:  -webkit-fill-available;
         display: block;
     width: -webkit-fill-available;
     height: 380px;
+    & .video_cleaning_technology{
+        display: inline-table;
+    }
     & iframe{
         height: 160px;
     width: 300px;
@@ -104,6 +118,10 @@ width:  -webkit-fill-available;
     margin: 30px;
 }
     
+}
+    .mobail-menu_icon{
+    display: flex;
+    margin-right: -144px;
 }
 .recommendation_cleaning_engine{
      width: -webkit-fill-available;
@@ -143,10 +161,11 @@ width:  -webkit-fill-available;
     & .check-mark li{
         color: white;
         float: left;
-        padding: 15px;
+        padding: 20px;
         list-style: none;
         display: grid;
-        font-size: larger;
+        font-size: 17px;
+        margin-left: 15px;
         
     }
     & .check-mark li img{
@@ -161,7 +180,7 @@ width:  -webkit-fill-available;
     
 }
 #price-list{
-  height: 950px;
+  height: unset;
     margin-top: 10px;
     & h1{
         color: black;
@@ -171,8 +190,8 @@ width:  -webkit-fill-available;
     position: relative;
     }
     & .block-price-list{
-           width: 280px;
-    height: 380px;
+           width: 250px;
+    height: 350px;
     border: 1px solid #333;
     border-radius: 22px;
     float: left;
@@ -180,7 +199,10 @@ width:  -webkit-fill-available;
     margin-top: 10px;
     margin-top: 15px;
     display: grid;
-        margin-left: 65px;
+        margin-left: 145px;
+    }
+    .block-price-list-responsive{
+        display: none;
     }
      & img{
             margin: auto;
@@ -219,7 +241,7 @@ width:  -webkit-fill-available;
     font-size: 16px;
     padding-top: 7px;
         margin: auto;
-            top: -15px;
+            top: -10px;
     position: relative;
         cursor: pointer;
         
@@ -230,18 +252,16 @@ width:  -webkit-fill-available;
     }
    
 }
-.background-bottom-block{
+#background-bottom-block{
     display: grid;
     background-color: #a7a7a775;
     width: 100%;
+    height: 160px;
 }
 #bottom-block-contacts{
-    width: 1000px;
-    height: 200px;
-    display: inline-flex;
+  display: flex;
     margin: auto;
-    top: 15px;
-    position: relative;
+    margin-top: 6px;
     & .contacts{
         display: block;
         float: left;
@@ -259,57 +279,494 @@ width:  -webkit-fill-available;
         text-align: center;
     }
 }
-@media only screen and (max-width:480px){
-    .header .img{
-        width: fit-content;
+& .social-network{
+        display:none;
     }
-    .header .blackout{
-        width: 963px;
+//////////////////////////////////
+@media only screen  (min-width : 619px)  , (max-width : 925px) {
+    .header .menu li{
+        margin: 0px;
     }
-    .container{
-        width: 1000px;
+    .header .menu li.positionIcon{
+        display: block;
+        margin: auto;
     }
-    .logo-hho img{
-        height: 100px;
-    padding: 4px;
-        margin: 20px 0px 0px 0px;
+    .headhesive--stick .mobail-menu_icon li.positionIcon{
+        display: inline;
     }
-    #hydrogen_cleaning_engine{
-        top: 200px;
+    .header .menu li{
+        display: none;
     }
-    .headhesive{
-        height: 80px;
+    .header .hedaer_menu{
+padding-top: 0px;
+        
+    }
+    .header .menu {
+    display: block;
+    background-color: #181a1bcf;
+    height: 55px;
+    padding: 0px;
+}
+    ul.menu.responsive ul.mobail-menu_icon{
+            position: absolute;
+    }
+    .header .logo-hho{
+            position: relative;
+    float: left;
+    padding: 20px;
+    padding-top: 0px;
+    z-index: 2;
+    }
+    .header .logo-hho img{
+        width: 55px;
+    }
+    .svg-inline--fa.fa-w-18{
+            width: 3.125em;
+        height: 30px;
+    }
+    .svg-inline--fa.fa-w-14{
+         width: 3.125em;
+        height: 30px;
+    }
+    .header .main_text h1{
+        text-align: center;
+    margin-top: 10px;
+    margin: auto;
+    }
+    
+    /**/
+    ul.menu.responsive > li{
+    float: none;
+    display: block;
+    margin-left: -41px;
+    position: relative;
+    }
+    .responsive .headhesive li{
+        display: block;
+    }
+    .headhesive--stick li.icon{
+        display: block;
+       float: left;
+    }
+    .headhesive li{
+        display: none;
     }
     .headhesive ul.menu{
-        width: 82%;
-        height: 80px;
+        display: table;
+    }
+    /**/
+    .technollogy{
+        display: block;
+    }
+    .technollogy #text-content{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .technollogy .photo-technology{
+            margin-top: 145px;
+    text-align: center;
+    }
+    /**/
+    #bottom-block-contacts .contacts{
+        display: block;
+    float: left;
+    padding: 8px;
+    }
+    #bottom-block-contacts .contacts h3{
+            font-size: 19px;
+    text-align: center;
+    }
+    #bottom-block-contacts .contacts p{
+        font-size: 13px;
+    }
+   
+    
+    #price-list .block-price-list{
+            width: 214px;
+    height: 350px;
+    border: 1px solid #333;
+    border-radius: 22px;
+   
+    margin: -1px;
+    margin-top: 10px;
+    margin-top: 15px;
+    display: grid;
+    margin-left: 0px;
+        text-align: center;
+    }
+    
+    #price-list h1{
+    color: black;
+    text-align: center;
+    height: 30px;
+    top: 0px;
+    position: relative;
+    }
+    /**/
+    #hydrogen_cleaning_engine iframe{
+        height: 120px;
+    float: left;
+    padding: 5px;
+        margin: 0px;
+        width: 200px;
+        
     }
     .recommendation_cleaning_engine{
-        width: 1000px;
-        top: 70px;
+        position: relative;
+    top: -80px;
     }
-    #hydrogen_cleaning_engine iframe{
-        width: 250px;
+    .recommendation_cleaning_engine .recommendation-filling-content .top-paragraph{
+        width: auto;
+        padding: 10px;
+        font-size: 19px;
+    }
+    .recommendation_cleaning_engine .recommendation-filling-content h1{
+        font-size: 25px;
+    }
+    .recommendation_cleaning_engine .recommendation-filling-content .central-paragraph{
+        font-size: 18px;
     }
     .recommendation_cleaning_engine .check-mark li img{
-        width: 60px;
-    }
-    .recommendation_cleaning_engine .check-mark li p{
-        font-size: 15px;
+        width: 55px;
     }
     .recommendation_cleaning_engine .check-mark li{
-        padding: 7px;
+        padding: 0px;
+    width: 120px;
+    margin-left: 25px;
+    height: 115px;
     }
+    
+    #background-bottom-block{
+    background-color: #ffffff00;
+    }
+    
+    #bottom-block-contacts{
+  display: none;
+        
+    }
+    .social-network{
+display: block;
+        text-align: center;
+            top: 20px;
+    position: relative;
+    }
+    .svg-inline--fa.fa-w-12{
+            width: 3.75em;
+          height: 2em;
+    }
+    
+ 
+
+}
+ 
+@media only screen  (min-width : 300px), (max-width:618px){
+    
+    .header{
+    height:  300px;
+    }
+    .header .menu{
+        
+    }
+   
+    .header .img{
+height:  300px;
+    }
+    .header .main_text h1{
+        width: -webkit-fill-available;
+    }
+    .header_textT-size-one{
+        font-size: 25px;
+    }
+    .header_textT-size-two{
+         font-size: 28px;
+    }
+    .header_textT-size-thrid{
+         font-size: 13px;
+    }
+    .header .logo-hho{
+       
+    }
+    .header .main_text{
+        top: 0px;
+        width: 99%;
+    margin-left: 0px;
+    }
+/*botton*/    
+    .header .button_sign-up{
+        
+    }
+    .header .blackout{
+      height: 300px;
+    }
+  
+    .logo-hho img{
+        height: 60px;
+    position: relative;
+    top: -3px;
+    }
+    #hydrogen_cleaning_engine{
+        top: 15px;
+            height: 550px;
+    }
+    .hedaer_menu.headhesive{
+        
+    }
+    .headhesive ul.menu{
+    height: 55px;
+    width: auto;
+    display: flex;
+        padding-left: 10px;
+    }
+    .recommendation_cleaning_engine{
+        top: 70px;
+        background-size: cover;
+        height: 800px;
+    }
+    #hydrogen_cleaning_engine iframe{
+        width: -webkit-fill-available;
+    margin: 5px 0px 0 -5px;
+        height: auto;
+    }
+
     #price-list{
             top: 65px;
     position: relative;
     }
     #price-list .block-price-list{
-        margin-left: 132px;
+       display: none;
     }
-    .background-bottom-block{
-        width: 1000px;
+    #background-bottom-block{
+      background-color: #a7a7a700;
+    }
+    /*teschnology*/
+    .technollogy{
+           display: initial;
+    }
+    .technollogy #text-content{
+        width: 340px;
+        height: auto;
+            margin: auto;
+    padding-left: 20px;
+    }
+    .photo-technology{
+        background-image: url(img/min-teshnoloj.png);
+        width: 320px;
+    height: 250px;
+    }
+    .technollogy .photo-technology{
+        margin: auto;
+        margin-top: 0px;
+    }
+    .technollogy #text-content p{
+        font-size: 16px;
+    }
+    .photo-technology img{
+        display: none;
+    }
+    .technollogy #text-content h1{
+        font-size: 30px;
+        margin-right: 0px;
+    }
+    /*рекомендации по очистке двигателя*/
+    .recommendation_cleaning_engine .recommendation-filling-content h1{
+font-size: 22px;
     position: relative;
-    top: 70px;
+    top: 0px;
+    padding: 5px;
+    }
+    .recommendation_cleaning_engine .recommendation-filling-content .top-paragraph{
+        top: 50px;
+        width: auto;
+    }
+    .recommendation_cleaning_engine .recommendation-filling-content .top-paragraph p {
+            font-size: 17px;
+padding: 10px;
+    top: -60px;
+    position: relative;
+    }
+    .recommendation_cleaning_engine .recommendation-filling-content .central-paragraph li{
+            font-size: 14px;
+    }
+    .recommendation_cleaning_engine .recommendation-filling-content .central-paragraph{
+      color: white;
+    position: relative;
+    margin: auto;
+    top: -5px;
+    width: auto;
+    }
+    /*преимушиства очистки двс*/
+    .recommendation_cleaning_engine .check-mark{
+         margin: 10px;
+    }
+    .recommendation_cleaning_engine .check-mark li{
+        padding: 0px;
+    width: 110px;
+    margin-left: 25px;
+            height: 100px;
+    }
+    .recommendation_cleaning_engine .check-mark li img{
+        width: 41px;
+    }
+    .recommendation_cleaning_engine .check-mark li p{
+        font-size: 12px;
+    text-align: center;
+    }
+    
+    #price-list .block-price-list-responsive{
+      ;
+    border: 1px solid #333;
+    border-radius: 22px;
+    margin-top: 25px;
+    display: grid;
+        
+    }
+    /*нижний блок контакты*/
+    #background-bottom-block-responsive{
+    height: 150px;
+    background-color: #0000007d;
+    position: relative;
+    display: inline-block;
+    top: 74px;
+    }
+    #bottom-block-contacts{
+        display: none;
+    }
+    .social-network{
+           height: 41px;
+    border-bottom: 1px solid #fff;
+    display: grid;
+    position: relative;
+    top: 10px;
+    }
+    .social-networking-icons{
+        margin: auto;
+    }
+    .svg-inline--fa.fa-w-18{
+        width: 3.125em;
+    height: 1.8rem;
+    }
+    .svg-inline--fa.fa-w-14{
+         width: 3.125em;
+    height: 1.8rem;
+    }
+    .svg-inline--fa.fa-w-12{
+         width: 3.125em;
+    height: 1.8rem;
+    }
+    .svg-inline--fa{
+        color:white;
+    }
+    .address-below{
+        color: white;
+        text-align: center;
+    }
+    .pin-number-bottom{
+        color: white;
+        text-align: center;
+    }
+    .contact-information-below{
+        position: relative;
+    top: 20px;
+    }
+    /*добавление класса responsive*/
+    ul.menu.responsive{
+       position: relative;
+    width: auto;
+    display: table;
+    }
+    ul.menu.responsive>li.icon{
+        top: 0px;
+    right: 0px;
+        background-color: #ffffff00;
+    }
+    ul.menu.responsive>li{
+        float: none;
+          display: block;
+            margin-left: -41px;
+    top: 12px;
+    position: relative;
+    }
+    ul.menu.responsive>li>a {
+        display: block;
+        text-align: left;
+    }
+    .headhesive--stick{
+
+      
+    }
+    .headhesive--stick ul.menu.responsive{
+        height: 270px;
+    }
+    .headhesive li.icon{
+        display: block;
+    float: left;
+    }
+    .headhesive li{
+        display: none;
+    }
+    .header .menu li{
+        display: none;
+    }
+    .header .hedaer_menu{
+            padding-top: 0;
+    }
+    .header .menu{
+       display: block;
+       background-color: #181a1bcf;
+    height: 55px;
+        padding: 0px;
+    }
+    /*меню responsive мобильная версия*/
+    .header .logo-hho{
+        z-index: 1;
+        padding: 0px;
+    }
+    .mobail-menu_icon{
+        display: flex;
+    padding: 0px;
+        margin: auto;
+    }
+    .mobail-menu_icon li.positionIcon {
+    border: none;
+        margin: auto;
+    }
+    
+    .headhesive--stick .mobail-menu_icon li.positionIcon{
+           display: inline;
+    }
+   
+    ul.menu.responsive ul.mobail-menu_icon{
+           position: absolute;
+    }
+    .header .menu li.positionIcon a{
+        padding: 0px;
+    }
+
+    
+}
+@media only screen (min-width:300px) , (max-width:321px){
+   .header .menu li{
+       padding: 6px;
+    }
+    .recommendation_cleaning_engine .check-mark li{
+        padding: 0px;
+    }
+    .recommendation_cleaning_engine{
+            top: 70px;
+    background-size: cover;
+    height: 900px;
+    }
+
+}
+@media only screen (min-width:359px) , (max-width:361px){
+    .recommendation_cleaning_engine .check-mark li{
+        margin-left: 8px;
     }
 }
+@media only screen (min-width:300px) , (max-width:359px){
+    .recommendation_cleaning_engine .check-mark li{
+        margin-left: 0px;
+    }
+}
+
+        
